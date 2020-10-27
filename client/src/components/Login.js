@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { useHistory } from "react-router-dom";
 import { useFormInput } from "../customHooks/useFormInput";
 import { AuthContext } from "../providers/AuthProvider";
-import {Form,Button, Header} from "semantic-ui-css";
+// import {Input,Button, Header, Label} from "semantic-ui-react";
 
 const Login = (props) => {
   const history = useHistory();
@@ -21,20 +21,20 @@ const Login = (props) => {
   };
   return (
     <div>
-      <Header as="h1">Login</Header>
-      <Form onSubmit={handleSubmit}>
-        <Form.Group>
-        <Form.Label>Email</Form.Label>
-        <Form.Control autoFocus {...email} />
-        </Form.Group>
-        <Form.Group>
-        <Form.Label>Password</Form.Label>
-        <Form.Control type="password" {...password} />
-        </Form.Group>
-        <Button variant="info"type="submit">Login</Button>
-      </Form>
+      <h1>Login</h1>
+      <form onSubmit={handleSubmit}>
+        
+        <p>Email</p>
+        <input autoFocus {...email} />
+        
+        
+        <p>Password</p>
+        <input type="password" {...password} />
+        
+        <button variant="info"type="submit">Login</button>
+      </form>
       <br />
-      <Button variant="success" href="/">Back</Button>
+      <button variant="success" href="/">Back</button>
     </div>
   );
 };

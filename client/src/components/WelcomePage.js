@@ -1,14 +1,14 @@
 import React from 'react';
-import {Button, Container} from 'semantic-ui-css';
+
 
 const WelcomePage = () => (
   <div>
-  <Container>
+  <br/>
   <h1 className="landing">Please register or sign in</h1>
-  <Button href="/login" variant="info" block></Button>
+  <button href="/login" variant="info" block>Login</button>
 
-  <Button href="/register" variant="success" block>Sign Up</Button>
-  </Container>
+  <button href="/register" variant="success" block>Sign Up</button>
+ 
   </div>
 )
 
