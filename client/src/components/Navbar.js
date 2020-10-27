@@ -14,7 +14,9 @@ const NavBar = () => {
 
 const styles = {
   navbar: {
-    background: "black",
+    background: "white",
+    outline: "2px solid",
+    outlineColor: "black",
     padding: "10px",
   },
 };
