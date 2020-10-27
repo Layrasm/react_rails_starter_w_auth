@@ -29,3 +29,7 @@
     `git add .`
     `git commit -m`
     `git push origin master`
+
+## Need to set up .env for Cloudinary after clone
+
+1. `Review .env.example`

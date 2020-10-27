@@ -1,15 +1,29 @@
 import React from 'react';
+import { useHistory } from "react-router-dom";
 
 
-const WelcomePage = () => (
+const WelcomePage = () => {
+  const history = useHistory();
+
+  const login = () =>{ 
+    let path = `login`; 
+    history.push(path);
+  }
+
+  const register = () =>{ 
+    let path = `register`; 
+    history.push(path);
+  }
+
+  return(
   <div>
   <br/>
   <h1 className="landing">Please register or sign in</h1>
-  <button href="/login" variant="info" block>Login</button>
+  <button onClick={login} variant="info" block>Login</button>
 
-  <button href="/register" variant="success" block>Sign Up</button>
+  <button onClick={register} variant="success" block>Sign Up</button>
  
   </div>
-)
+)}
 
 export default WelcomePage;

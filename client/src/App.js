@@ -9,6 +9,7 @@ import Login from "./components/Login";
 import FetchUser from "./components/FetchUser";
 import ProtectedRoute from "./components/ProtectedRoute";
 import WelcomePage from "./components/WelcomePage";
+import MyAccount from './components/MyAccount';
 
 
 
@@ -20,11 +21,13 @@ function App() {
       <div>
       <NavBar/>
         <Switch>
-          <ProtectedRoute exact path="/home" component={Home} />
-          <ProtectedRoute exact path="/ThingsDemo" component={ThingsDemo} />
           <Route exact path='/' component={WelcomePage}/>
           <Route exact path="/login" component={Login} />
           <Route exact path="/register" component={Register} />
+          <ProtectedRoute exact path="/home" component={Home} />
+          <ProtectedRoute exact path="/ThingsDemo" component={ThingsDemo} />
+          <ProtectedRoute exact path="/MyAccount" component={MyAccount}/>
+          
         </Switch>
       </div>
       </FetchUser>
