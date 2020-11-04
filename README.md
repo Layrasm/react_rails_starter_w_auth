@@ -15,8 +15,8 @@
 9. `yarn start`
 
 *optional*
-1. yarn add styled-components
-2. yarn add react-bootstrap bootstrap
+1. `yarn add styled-components`
+2. `yarn add react-bootstrap bootstrap`
 
 ### handle git!
 
