@@ -14,7 +14,7 @@
 8. `yard add axios`
 9. `yarn start`
 
-*optional*
+*optional (client)*
 1. `yarn add styled-components`
 2. `yarn add react-bootstrap bootstrap`
 
