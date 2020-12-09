@@ -2,7 +2,7 @@
 
 ## Steps to setup and run
 
-1. `git clone git@github.com:Layrasm/rails-react-router.git <project-name>`
+1. `git clone git@github.com:Layrasm/react_rails_starter_w_auth.git <project-name>`
 
 2. `cd project-name`
 3. `bundle install`
