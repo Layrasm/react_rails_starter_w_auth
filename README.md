@@ -11,7 +11,7 @@
 6. `rails s -p 3001`
 
 7. `cd client && yarn`
-8. `yard add axios`
+8. `yarn add axios`
 9. `yarn start`
 
 *optional (client)*
@@ -25,7 +25,7 @@
   it/
 
 1.  - remove origin `git remote rm origin`
-    - git add remote origin to new repo
+    - add new repo `git add remote origin <repo>`
 
 2.  or
     `rm -rf .git`
